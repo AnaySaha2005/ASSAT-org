@@ -47,17 +47,17 @@ app.get('/student', (req, res) => {
 // Handle student form submission
 app.post('/student/submit', async (req, res) => {
     const enteredOtp = req.body.enteredOtp;
-    console.log(enteredOtp);
+    
     // Find the OTP in the database
     const teacherOtp = await Otp.findOne({ otp: enteredOtp, validUntil: { $gt: new Date() } });
 
     if (teacherOtp) {
         s = "Attendance Taken Successfully!!"
         // Valid OTP, mark attendance or perform other actions
-        res.render("studentSuccess.ejs", { s });
+        res.render("successful.ejs", { s });
     } else {
         f = "Sorry your attendance has not been taken.."
-        res.render("studentSuccess.ejs", { f });
+        res.render("successful.ejs", { f });
     }
 });
 
