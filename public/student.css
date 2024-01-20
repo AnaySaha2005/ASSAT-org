@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.dropdown {
+    margin-bottom: 20px;
+
+}
+
+#in1 {
+    margin-bottom: 30px;
+}
+
+.dis {
+    display: none;
+}
