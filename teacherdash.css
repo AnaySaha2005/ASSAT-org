@@ -1714,3 +1714,18 @@ body {
     font-size: 1em;
   }
 }
+.otp-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  align-items: center;
+  transition: background-color 0.3s ease-out;
+}
+
+.otp-button:hover {
+  background-color: #2980b9;
+}
