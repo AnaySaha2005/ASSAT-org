@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.container{
+    text-align: center;
+}
+.note{
+    position: fixed;
+    bottom: 2px;
+    left: 2px;
+}
