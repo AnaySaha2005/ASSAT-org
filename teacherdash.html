@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teacherdash.css">
+    <title>Teacher Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Teacher Dashboard</h1>
+            <li class="glowing-border">
+                <button id="logoutBtn">Logout</button>
+            </li>
+        </div>
+    </header>
+
+    <main>
+        <section id="classList">
+            <h2>Your Classes</h2>
+            <ul>
+                <li>
+                    <a href="#" class="classLink">CO-1</a>
+                    <select class="subjectDropdown">
+                        <!-- <option value="data structures">Data Structures</option> -->
+                        <option value="operating system">Operating system</option>
+                        <!-- <option value="DBMS">DBMS</option> -->
+                        <!-- Add more subjects as needed -->
+                    </select>
+                    <button class="viewAttendanceBtn">View Attendance</button>
+                </li>
+                <!-- Add more classes as needed -->
+            </ul>
+        </section>
+
+        <section id="attendanceDetails">
+            <h2>Attendance Details</h2>
+            <div id="attendanceInfo">
+                <!-- Canvas for the chart -->
+                <canvas id="attendanceChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="teacherdash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
