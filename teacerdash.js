@@ -46,3 +46,37 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Logout clicked. Implement logout functionality.');
     });
 });
+
+// teacherdash.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Dummy data for illustration purposes
+    var attendanceData = {
+        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+        datasets: [{
+            label: 'Attendance',
+            data: [80, 90, 85, 95],
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+        }]
+    };
+
+    // Get the attendance chart canvas element
+    var attendanceCanvas = document.getElementById('attendanceChart');
+
+    // Initialize the attendance chart
+    var attendanceChart = new Chart(attendanceCanvas, {
+        type: 'bar',
+        data: attendanceData,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100
+                }
+            }
+        }
+    });
+});
+
