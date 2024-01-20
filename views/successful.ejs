@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://temp.staticsave.com/65ab9a1861bb9.css">
+    <title>Attendance Confirmation</title>
+</head>
+
+<body>
+    <div class="container">
+        <% if (locals.s) { %>
+            <h1 id="success">
+                <%= s %>
+                    <% } %>
+            </h1>
+            <% if (locals.f) { %>
+                <h1 id="failure">
+                    <%= f %>
+                </h1>
+                <% } %>
+
+                    <p>Thank you for confirming your attendance.</p>
+    </div>
+    <div class="note">Thanks for using our service..</div>
+</body>
+
+</html>
